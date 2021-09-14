@@ -1,1 +1,1 @@
-A work directory to manipulate, acces and store my courses content
+A work directory to manipulate, access and store my courses content
