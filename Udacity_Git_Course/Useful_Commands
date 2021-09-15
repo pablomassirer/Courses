@@ -1,0 +1,83 @@
+ -- First time Git Configuration -- 
+
+# sets up Git with your name
+git config --global user.name "<Your-Full-Name>"
+
+# sets up Git with your email
+git config --global user.email "<your-email-address>"
+
+# makes sure that Git output is colored
+git config --global color.ui auto
+
+# displays the original state in a conflict
+git config --global merge.conflictstyle diff3
+
+git config --list
+
+
+* Configuring code editor ->  git config --global core.editor "atom -w" or "vscode -w"
+
+* git init -> Initializes the git repo
+
+* git clone -> Makes a copy of an existing repo
+
+* git status -> Presents the current state of the branch
+
+* git log -> Shows the info about the commits made
+* git log --oneline -> Presents in one line more concise info about the commits made
+* git log --stat -> Shows the files that have been changed
+* git log --patch (-p) -> Shows the changes that happened in the file
+* git log -p --stat -> Displays both patch info and stats info
+* git log -p -w -> Ignore the whitespaces changes
+* git log --decorate -> Shows log w\ tag (not necessary to use --decorate anymore)
+* git log --oneline --decorate --graph --all -> Shows all branches and commits made in each one of them in the repo
+
+* git add -> Add from the Work Directory to the Staging Index area0
+* git add [path/file1] [path/file2] -> Adds files
+* git add . -> Adds all files from the Working Directory
+
+* git commit -> Passes the files from the Staging Area to the Repository, saving them there
+* git commit -m "name of the commit here" -> Makes the commit already setting the name of it
+
+* git tag -a [message] -> Creates a tag with the given message
+* git tag - a [message] [SHA] -> Creates a tag in specific commit
+* git tag -d [message] -> Deletes the tag with the given message
+
+* git branch -> Verifys the already created branches
+* git branch [branch-name] -> Create a new branch w/ the given name
+* git branch -d or --delete [branch-name] -> Deletes the branch
+* git branch backup -> Creates a backup of the current branch
+
+* git checkout [branch-name] -> Switch to desired branch
+* git checkout - b [branch-name and to switch to] -> Creates and switches to new branch
+
+* git merge [other-branch] - Merging two branches together
+
+* git commit --amend -> Alter the most recent commit, sort of a update commit
+* git revert [SHA-of-commit-to-revert] -> Used to revert a previously made commit
+
+* git reset [-- mixed; --soft; --hard] -> Used to erase commits | --mixed: move the changes to Working Directory; --soft: to the stage index; --hard: to the trash, delete
+
+* git backup -> Creates a backup of the current branch
+* git chekout -- [archive] -> Remove uncommited changes
+* git merge backup -> Finally, retores the branch
+
+* git remote -> Initializes connection
+* git remote add [remote-name] [link-to-repo] -> Creates a connection with a remote repo
+* git remote -v -> Indicates the path/URL that it refers to
+
+* git push [remote-name] [branch-name] -> Send commits from the local repo to the remote one
+* git pull [remote-name] [branch-name] -> Send commits from the remote repo to the local one
+* git fetch [remote-name] [branch-name] -> It just pull the commits but do not merge them in the local repo
+
+* git shortlog [-s] [-n]-> Shows the commits displayed by author
+
+* git show [SHA] -> Shows the commit linked to the SHA
+
+* git log --grep='word_to_filter' -> Filter by given word
+
+* git log --author=Name or --author='First_last_Name' -> Shows the commits of the author
+
+
+* git rebase -i [base -> HEAD~1; ...; HEAD~3; HEAD~4...]
+* nano .gitignore -> Creates a file to ignore a file to not commit
