@@ -79,5 +79,6 @@ git config --list
 * git log --author=Name or --author='First_last_Name' -> Shows the commits of the author
 
 
-* git rebase -i [base -> HEAD~1; ...; HEAD~3; HEAD~4...]
+* git rebase -i [base -> HEAD~1; ...; HEAD~3; HEAD~4...] -> To merge the choosen ancestral to the previous commits made before it
+
 * nano .gitignore -> Creates a file to ignore a file to not commit
