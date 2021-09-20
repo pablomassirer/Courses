@@ -1,0 +1,86 @@
+
+Argument 1: uploaded_images/	Argument 2: resnet	Argument 3: dognames.txt
+
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Prints 10 filenames from folder pet_images/
+
+ 1 file:       Lotus_flower_01.jpg
+ 2 file:         Guinea_pig_01.jpg
+ 3 file:         Rottweiler_01.jpg
+ 4 file:         Rottweiler_02.jpg
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:            Lotus_flower_01.jpg  label:               lotus flower
+ 2 key:              Guinea_pig_01.jpg  label:                 guinea pig
+ 3 key:              Rottweiler_01.jpg  label:                 rottweiler
+ 4 key:              Rottweiler_02.jpg  label:                 rottweiler
+
+     MATCH:
+
+             Guinea_pig_01.jpg: 
+Real:                 guinea pig   Classifier:       guinea pig, cavia cobaya
+
+             Rottweiler_01.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler
+
+             Rottweiler_02.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler
+
+ NOT A MATCH:
+
+           Lotus_flower_01.jpg: 
+Real:               lotus flower   Classifier:                          daisy
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+             Guinea_pig_01.jpg: 
+Real:                 guinea pig   Classifier:       guinea pig, cavia cobaya  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Rottweiler_01.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Rottweiler_02.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+           Lotus_flower_01.jpg: 
+Real:               lotus flower   Classifier:                          daisy  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture RESNET *** 
+
+N Images                                :                              4
+N Dog Images                            :                              2
+N Not-dog Images                        :                              2
+PCT Match                               :                         75.000
+PCT Correct Dogs                        :                        100.000
+PCT Correct Dog Breeds                  :                        100.000
+PCT Correct Not Dogs                    :                        100.000
+PCT pct_match                           :                         75.000
+PCT pct_correct_dogs                    :                        100.000
+PCT pct_correct_breed                   :                        100.000
+PCT pct_correct_notdogs                 :                        100.000
+
+** Total Elapsed Runtime: 0:0:0
