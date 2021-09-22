@@ -1,0 +1,51 @@
+* conda list -> Shows all packages installed in environment
+
+* conda upgrade conda & conda upgrade --all -> Update and upgrade all the packages in the default env 
+
+* conda update --all ->	Updates all packages
+
+* conda install PACKAGE_NAME - Install package
+
+* conda remove PACKAGE_NAME - Remove package
+
+* conda update package_name - Update package
+
+* conda create -n env_name [python=X.X] [LIST_OF_PACKAGES] -> Creating environment
+
+* conda env list - Lists the avaible envs
+
+-- Activate env --
+
+# For  conda 4.6 and later versions on Linux/macOS/Windows, use
+	conda activate my_env
+#For conda versions prior to 4.6 on Linux/macOS, use 
+	source activate my_env
+#For conda versions prior to 4.6 on Windows, use 
+	activate my_env
+
+-- Deactivate env --
+	
+# For  conda 4.6 and later versions on Linux/macOS/Windows, use
+	conda deactivate
+#For conda versions prior to 4.6 on Linux/macOS, use 
+	source deactivate
+#For conda versions prior to 4.6 on Windows, use 
+	deactivate
+
+# Export an env to a file	
+	conda env export > environment.yaml
+
+# Create and env from a file
+	conda env create -f environment.yaml
+
+# If the environment is not activated
+	conda list -n env_name
+
+# If the environment is activated
+	conda list
+	
+# To see if a specific package, say `scipy` is installed in an environment
+	conda list -n env_name scipy
+
+# Removing an env
+	conda env remove -n env_name
