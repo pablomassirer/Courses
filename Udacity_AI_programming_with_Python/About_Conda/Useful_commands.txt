@@ -4,15 +4,15 @@
 
 * conda update --all ->	Updates all packages
 
-* conda install PACKAGE_NAME - Install package
+* conda install PACKAGE_NAME -> Install package
 
-* conda remove PACKAGE_NAME - Remove package
+* conda remove PACKAGE_NAME -> Remove package
 
-* conda update package_name - Update package
+* conda update package_name -> Update package
 
 * conda create -n env_name [python=X.X] [LIST_OF_PACKAGES] -> Creating environment
 
-* conda env list - Lists the avaible envs
+* conda env list -> Lists the avaible envs
 
 -- Activate env --
 
